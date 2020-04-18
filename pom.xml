@@ -11,13 +11,14 @@
 	</parent>
 	<groupId>com.bhargav</groupId>
 	<artifactId>drools.decisiontables</artifactId>
-	<version>0.0.2-SNAPSHOT</version>
+	<version>0.0.3-SNAPSHOT</version>
 	<name>drools.decisiontables</name>
 	<description>A sample spring boot REST project with jboss drools decision tables integration</description>
 
 	<properties>
 		<java.version>11</java.version>
 		<drools.version>7.36.0.Final</drools.version>
+		<karate.version>0.9.5</karate.version>
 	</properties>
 
 	<dependencies>
@@ -29,6 +30,12 @@
 			<groupId>org.drools</groupId>
 			<artifactId>drools-decisiontables</artifactId>
 			<version>${drools.version}</version>
+		</dependency>
+		<dependency>
+			<groupId>com.intuit.karate</groupId>
+			<artifactId>karate-apache</artifactId>
+			<version>${karate.version}</version>
+			<scope>test</scope>
 		</dependency>
 
 		<dependency>
