@@ -17,15 +17,15 @@ public class WealthPredictabilityController {
 		this.wealthPredictabilityService = wealthPredictabilityService;
 	}
 
-	@PostMapping("predicateWealths")
-	public List<WealthPredictabilityRequest> predicateWealth(
+	@PostMapping("predictWealths")
+	public List<WealthPredictabilityRequest> predictWealth(
 			@RequestBody final List<com.bhargav.drools.decisiontables.facts.WealthPredictabilityRequest> request) {
 		wealthPredictabilityService.predictWealth(request);
 		return request;
 	}
 
-	@PostMapping("predicateWealth")
-	public WealthPredictabilityRequest predicateWealth(@RequestBody final WealthPredictabilityRequest request) {
+	@PostMapping("predictWealth")
+	public WealthPredictabilityRequest predictWealth(@RequestBody final WealthPredictabilityRequest request) {
 		wealthPredictabilityService.predictWealth(request);
 		return request;
 	}
